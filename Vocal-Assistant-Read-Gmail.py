@@ -73,7 +73,7 @@ recognizer_instance = sr.Recognizer()
 with sr.Microphone() as source:
     recognizer_instance.adjust_for_ambient_noise(source)
     print("I'm listening...")
-    # Always good, you can talk
+    # You can talk
     audio = recognizer_instance.listen(source)
     
 # Translate the micophone audio in a 'en-En'(English) text
